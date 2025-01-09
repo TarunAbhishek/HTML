@@ -1,0 +1,60 @@
+<!--Day-9 Forms
+forms are defined with form tag
+How forms are used to collect data from the user and allowing users to submit data to the server
+form attributes are: method and action
+form have form elements: Text boxes, dropdown lists, radio buttons, check boxes, submit buttons
+We use input tag to get user's input!!
+<form>
+    <input> /*This creates a input box in the website!!
+    We use placeholder attribute to place something inside the input boxes but it will be invisible after user enters something in the box
+    Input Types: text, number, password, email, date, datetime-local.
+    Label for and id tags are used to make the the label tagged text and input tagged stuff combine as one and when we click on enter your email text in the website it will directly goes to the input box for the email.
+    For in label & id in input used to build relation.
+    name attribute is used so that the data when submitted will be with proper defining so when we submit mail then the output from us to server will be as email=abhishektarun75@gmail.com(name attribute acts as a key carries value to the server)
+</form>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 9</title>
+</head>
+<body>
+    <form>
+        <label for="">Enter your email:</label>
+        <input type="email" placeholder="username"> <!--This defines the box only accept text-->
+        <br>
+        <label for="">Enter your password:</label>
+        <input type="password" placeholder="password"> <!--This defines the box only accept number values-->
+        <br>
+        <label for="">Enter date:</label>
+        <input type="date"> <!--This defines to the user to give date input-->
+        <input type="datetime-local"> <!--This defines to the user to give date input-->
+        <input type="color" name="" id=""> <!--This defines to the user to give date input-->
+    </form>
+    <form>
+        <label for="mail">Enter your email:</label>
+        <input type="email" id="mail" placeholder="username" name="email" value="example@gmail.com"> <!--value attribute is used to predefine something already in the input area--><!--If you want input from the user better not to give value attribute else if the value is already known and same for everyone we can use this value attribute-->
+        <br>
+        <label for="password">Enter your password:</label>
+        <input type="password" id="password" placeholder="password">
+        <br>
+        <label for="file">Upload your resume here:</label><br> 
+        <input type="file" id="file"> <!--Here we have to give file as a input as input type is file-->
+        <input type="search" id=""> <!--To search something--><br>
+        <label for="">Enter the url</label>
+        <input type="url"><!--To fill out the url-->
+        <input type="reset" value="Reset"><!--To clear all the values typed in the input fields we use reset button to remove all at once!!-->
+        <br>
+        <input type="radio" name="backend skills" id="backend skills" value="redux">
+        <label for="backend skills">redux</label>
+        <br>
+        <input type="radio" name="backend skills" id="redux" value="node.js">
+        <label for="redux">node js</label>
+        <br>
+        <input type="radio" name="backend skills" id="react" value="react">
+        <label for="react">react js</label>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>

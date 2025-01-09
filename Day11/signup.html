@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 11 Sign up and login</title>
+</head>
+<body>
+    <center>
+    <fieldset>
+        <legend><h1>Sign up</h1></legend>
+    <form action="https://formsubmit.co/leog65000@gmail.com" method="post">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New submission!">
+        <label for="username">User Name:</label><br>
+        <input type="text" name="username" id="username" pattern="[a-z!@#$%^&*()_+]+" required><br><br>
+        <label for="email">E-mail address</label><br>
+        <input type="email" name="email" id="email" required><br><br>
+        <label for="password">Set your password:</label><br>
+        <input type="password" name="password" id="password" title="Password must contain 8 characters minimum  • It should contain UpperCase Letter • It should contain Lower Case • It should contain Special Character • It should contain number" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*])[A-Za-z0-9!@#$%^&*]{8,}" required><br><br>
+        <label for="confirmpassword">Confirm your password:</label><br>
+        <input type="password" name="password" id="confirmpassword" title="Password must contain 8 characters minimum  • It should contain UpperCase Letter • It should contain Lower Case • It should contain Special Character • It should contain number" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*])[A-Za-z0-9!@#$%^&*]{8,}" required><br><br>
+        <label for="DOB">Date of Birth:</label><br>
+        <input type="date" id="DOB"><br><br>
+        <button type="submit" value="submit" formaction="./submit(signup).html">Register</button><br>
+        <p>Already have an account?<a href="./index.html">Sign in</a></p>
+    </form>
+    </fieldset>
+    </center>
+</body>
+</html>
